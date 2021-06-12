@@ -12,7 +12,8 @@ a = [random.randint(0, 9),
 while True:
     isok = False
     while isok == False:
-        b = input("input number ")
+        b = []
+        b = input("input number>")
         if len(b) != 4:
             print("input 4 digit number")
         else:
