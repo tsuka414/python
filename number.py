@@ -1,28 +1,25 @@
-def number_hit_game():
+import random
 
-    answer = 10
+def number_hit_game():
     
     print("This is hit number game")
-    print("Please input number >>>")
-    print(answer)
+    print("The number range is 1 ~ 100")
 
-    a = input()
-    guess = int(a)
-    print(type(guess))
+    answer = random.randrange(start=1, stop=100)  
+    guess = int(input("please input number"))
 
     trial = 1
     
-    while answer != guess:
+    while(guess != answer):
         trial += 1
-        print("You input wrong number")
-        print("next challenge?")
-        a = input()
-        guess = int(a) 
-    else:
-        print("You good")
-        print("trial_number is")
-        text = ("{trial} + time")
-        print(text)
+        if(guess > answer):
+            print("your input number is larger than the answer")
+        else:
+            print("your input number is smaller than the answer")
+        trial += 1
+        guess = int(input("please input number"))
+    print("Collect! answer is {}".format(answer))
+    print("trial number is {} times".format(trial))
 
 if __name__ == "__main__":
     number_hit_game()
