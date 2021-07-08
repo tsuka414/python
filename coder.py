@@ -16,3 +16,5 @@ def anti_vowel(text):
                 new_text.remove(j)
     return ''.join(new_text)
 print anti_vowel('I am learning Python.')
+
+# 重複を削除する
