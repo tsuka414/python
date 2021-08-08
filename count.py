@@ -11,3 +11,11 @@ print(l.count('c'))
 
 print(l.count('d'))
 # 0
+ 
+list = list(int(input()) for i in range(7))
+
+wa = sum(i <= 30 for i in list)
+
+print(wa)
+
+

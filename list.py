@@ -7,7 +7,9 @@ print(string)
 string2 = f'I am {name}.'
 print(string2)
 
+s = str(input())
 
+print(s[::-1])
 
 
 #1次元のリストへ文字を一文字ずつ代入する場合、
