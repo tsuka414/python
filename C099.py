@@ -1,3 +1,4 @@
+# paiza
 n, a = map(int, input().split())
 list = [int(input()) for i in range(n-1)]
 
